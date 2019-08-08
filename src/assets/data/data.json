@@ -1,0 +1,67 @@
+{
+   "jsondata": [
+      {
+         "id": 1,
+         "qrcode": "1",
+         "location": {
+            "latitude": 50.952952,
+            "longitude": 6.912467,
+            "street": "Venloer Str. 429"
+         },
+         "title": "“Ohne dich würde ich mich nicht trauen.”",
+         "artist": {
+            "name": "Jasmin Siddiqui und Falk Lehmann alias Herakut",
+            "website": "http://www.herakut.de"
+         },
+         "information": {
+            "text": "Auf dem Mural vom deutschen Street Art Duo Hera und Akut erkennt man ein kniendes Mädchen, die ihren Hund auf dem Arm hält. Ängstlich blickt sie in Richtung des Parks am Bürgerzentrum Ehrenfeld und hält ihren Hund schützend vor sich. Neben dem Hund steht „ohne dich würde ich mich nicht trauen“. Neben dem Mädchen kann man die Worte lesen: „we love even the scary looking ones“ . Man kann das Bild als einen Verweis auf das bunte und teils zwielichtige Treiben in naheliegenden Park verstehen.",
+            "gallery": {
+               "picturemap": "http://www.herakut.de/wp-content/uploads/2014/05/ko%CC%88ln.jpg",
+               "picturemapcredit": "http://www.herakut.de"
+            }
+         }
+      },
+      {
+         "id": 2,
+         "qrcode": "2",
+         "location": {
+            "latitude": 50.951911,
+            "longitude": 6.915215,
+            "street": "Schönsteinstr. 1A"
+         },
+         "title": "Unbekannt",
+         "artist": {
+            "name": "Captain Borderline",
+            "website": "http://captainborderline.org"
+         },
+         "information": {
+            "text": "-Denkmal für die Edelweißpiraten, Kölner Widerstandsgruppe zur NS Zeit-Mitglieder der Gruppe wurden 1944 in der Nähe des Denkmals hingerichtet",
+            "gallery": {
+               "picturemap": "https://koeln.mitvergnuegen.com/wp-content/uploads/sites/4/2018/02/unadjustednonraw_thumb_3bc-e1518399721139-680x383.jpg",
+               "picturemapcredit": "https://koeln.mitvergnuegen.com/2018/11-murals-in-ehrenfeld-die-ihr-kennen-solltet/"
+            }
+         }
+      },
+      {
+         "id": 3,
+         "qrcode": "3",
+         "location": {
+            "latitude": 50.94443,
+            "longitude": 6.923826,
+            "street": "Piusstr. 40"
+         },
+         "title": "Apokalypse",
+         "artist": {
+            "name": "Athener „GPO Crew“",
+            "website": "www.gpocrew.tk"
+         },
+         "information": {
+            "text": "Bild beschäftigt sich mit kölner Geschichte: Zerstörtes Köln, Kunsthandel im Mittelalter. Stil: Toy Graffiti.",
+            "gallery": {
+               "picturemap": "https://lowcdn.com/t/454becc51136-668cd04c2a/2048/orig/v1",
+               "picturemapcredit": "Dieter Weinkauf"
+            }
+         }
+      }
+   ]
+}

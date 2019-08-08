@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar text-center>
+    <ion-buttons slot="start" defaultHref = "/tabs/tab1" >
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Murals</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item detail *ngFor="let daten of datenData" (click)="getDatenDetails(daten)">
+    <ion-icon src="../../../assets/icon/LogoMakr_4zyT32 (1).svg"></ion-icon>{{ daten.title }}
+    <br>{{ daten.location.street }}
+  </ion-item>
+  </ion-list>
+</ion-content>

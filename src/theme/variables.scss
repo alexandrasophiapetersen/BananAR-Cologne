@@ -4,12 +4,12 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: #5b5e64;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-shade: #e0c631;
+  --ion-color-primary-tint: #585b5f;
 
   /** secondary **/
   --ion-color-secondary: #0cd1e8;
@@ -74,4 +74,35 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+
+@font-face {
+  font-family: "application";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/Bombing.ttf");
+}
+
+ion-title {
+  font-family: "application";
+  font-size: 30px;
+  color: yellow;
+  margin: auto;
+}
+
+ion-toolbar {
+  --background: #292929;
+}
+
+ion-content.map {
+  --background: transparent !important;
+  background: none !important;
+}
+
+ion-button {
+--background: #424242;
+margin-inline-start: 7px;
+margin-inline-end: 8px;
+height: 30px;
+font-size: 12px;
 }
