@@ -15,6 +15,7 @@ import { Platform } from '@ionic/angular';
   selector: 'app-ar',
   templateUrl: './ar.page.html',
   styleUrls: ['./ar.page.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ArPage implements OnInit {
 
