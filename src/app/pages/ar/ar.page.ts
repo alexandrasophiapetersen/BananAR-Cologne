@@ -4,11 +4,13 @@ import {BarcodeScanner} from '@ionic-native/barcode-scanner/ngx';
 import { JsonDataService } from '../../json-data.service';
 import { DOCUMENT } from '@angular/common';
 import { Toast } from '@ionic-native/toast/ngx';
-import { Router } from '@angular/router';
-import { NavController } from '@ionic/angular';
+import { Router, NavigationExtras } from '@angular/router';
+import { NavController, ModalController } from '@ionic/angular';
 import { CameraPreview, CameraPreviewOptions } from '@ionic-native/camera-preview/ngx';
-
 import { Platform } from '@ionic/angular';
+import { ModalPagePage } from '../modal-page/modal-page.page';
+const { Browser } = Plugins;
+
 
 
 @Component({
@@ -21,7 +23,7 @@ export class ArPage implements OnInit {
 
   datenData = [];
   selectedProduct: any;
-productFound = false;
+  productFound = false;
 
 
   constructor(
@@ -29,6 +31,7 @@ productFound = false;
     private datenService: JsonDataService,
     private toast: Toast,
     private router: Router,
+    public modalController: ModalController,
     public navCtrl: NavController, private cameraPreview: CameraPreview, private platform: Platform,
     @Inject(DOCUMENT) private _document) {
       fetch('../../../assets/data/data.json').then(res => res.json())
@@ -50,6 +53,7 @@ this.qrscan();
       if (this.selectedProduct !== undefined) {
         this.productFound = true;
         this.camerapreview();
+        this.showModal();
       } else {
         this.productFound = false;
         this.router.navigate(['/tabs/tab2']);
@@ -84,4 +88,26 @@ this.qrscan();
     this.cameraPreview.startCamera(cameraPreviewOpts);
   }
 
+   async showModal() {
+    const modal = await this.modalController.create({
+      component: ModalPagePage,
+      cssClass: 'modal-transparency'
+    });
+
+    modal.present();
+  }
+
+  async open() {
+    await Browser.open({url: this.selectedProduct.artist.website});
+    }
+
+    Details() {
+      let navigationExtras: NavigationExtras = {
+        state: {
+          selectedProduct: this.selectedProduct
+        }
+      };
+      this.router.navigate(['/tabs/tab2/ar/ar-detail'], navigationExtras);
+    }
+  
 }

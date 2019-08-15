@@ -1,1 +1,70 @@
-html, body, ion-app, div.nav-decor, .ion-content, .app-root { background-color: transparent !important; }
+html, body, ion-app, div.nav-decor, .ion-content, .app-root, ion-modal, .ion-card { background-color: transparent !important; }
+
+app-ar ion-content {
+    --background: transparent; 
+    padding-inline-end: 40px;
+    
+  }
+
+  app-ar ion-card {
+    --background: transparent none !important;
+    margin: auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 17px;
+    padding-inline-end: 30px;
+    padding-inline-start: 30px;
+    padding-top: 10px;
+}
+
+ion-modal {
+  margin: auto;
+  display: block;
+  width: 300px;
+  height: 280px;
+  --background: transparent none !important;
+}
+
+
+.transparent {
+--background-color: transparent !important;
+}
+
+ion-title {
+  padding-inline-end: 50px;
+}
+
+:host {
+    font-weight: 300;
+    font-size: 12px;
+}
+.titel {
+background-color:rgba(255, 255, 255, 0.603);
+color: black;
+padding: 8px;
+margin-bottom: 2px;
+display: inline-block;
+text-align: center;
+font-weight: bold;
+}
+
+.artist {
+    background-color:rgba(255, 255, 255, 0.603);
+    color: black;
+    padding: 8px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 300;
+}
+
+.website {
+    --background: rgba(255, 255, 255, 0.774);
+    color: black‚;
+    padding: 1px;
+    display: inline-block;
+    text-align: center;
+    text-transform: inherit;
+    --color: black;
+    float: right;
+    position: relative;
+}

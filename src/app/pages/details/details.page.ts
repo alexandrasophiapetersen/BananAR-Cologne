@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { NavController } from '@ionic/angular';
 import { JsonDataService } from '../../json-data.service';
+import { ArPage } from '../ar/ar.page';
 
 @Component({
   selector: 'app-details',
@@ -12,6 +13,7 @@ import { JsonDataService } from '../../json-data.service';
 })
 export class DetailsPage {
 datenData = [];
+@ViewChild(ArPage) ar: ArPage;
 
   constructor(
     private router: Router,

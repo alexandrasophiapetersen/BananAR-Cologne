@@ -34,6 +34,9 @@ const routes: Routes = [
   { path: 'tab2/ar',
     loadChildren: '../ar/ar.module#ArPageModule' /** QR Scan mit anschließender Camera Preview inkl. Overlays  */
   },
+  { path: 'tab2/ar/ar-detail',
+    loadChildren: '../ar-detail/ar-detail.module#ArDetailPageModule' /** QR Scan mit anschließender Camera Preview inkl. Overlays  */
+  },
     ]
   },
   {

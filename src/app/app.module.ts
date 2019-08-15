@@ -13,12 +13,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { TabsPage } from './pages/tabs/tabs.page'; /** importieren des Hauptpfades/der Startseite */
 import { Toast } from '@ionic-native/toast/ngx'; /** Import des Toast Plugins zum Ausgeben von Alerts/Meldungen */
 import { CameraPreview } from '@ionic-native/camera-preview/ngx'; /** Import des Cordova Plugins Camera Preview, */
+import { ModalPagePageModule } from './pages/modal-page/modal-page.module';
  /** um eine Kameravorschau mit HTML Elementen möglich zu machen */
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [TabsPage],
-  imports: [BrowserModule, IonicModule.forRoot(), IonicStorageModule.forRoot(), AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, IonicModule.forRoot(), IonicStorageModule.forRoot(), AppRoutingModule, HttpClientModule, ModalPagePageModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     BarcodeScanner, Toast, CameraPreview

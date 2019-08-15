@@ -106,3 +106,7 @@ margin-inline-end: 8px;
 height: 30px;
 font-size: 12px;
 }
+ion-content.transparent {
+  --background: transparent !important;
+  background: none !important;
+}

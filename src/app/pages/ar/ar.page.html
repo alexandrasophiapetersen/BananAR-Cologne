@@ -1,11 +1,14 @@
 <ion-header>
-  <ion-toolbar text-center>
-      <ion-buttons slot="start" defaultHref = "/tabs/tab2" >
-        <ion-back-button></ion-back-button>
-      </ion-buttons>
-    <ion-title>ar</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
-  
-</ion-content>
+    <ion-toolbar text-center>
+        <ion-buttons slot="start" defaultHref = "/tabs/tab2"  >
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+      <ion-title>AR</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content *ngIf="productFound"><ion-button class="detailseite" (click)= "Details()">Detailseite</ion-button></ion-content>
+  <ion-content  *ngIf="productFound">
+      <ion-button class="website" (click)="open()">{{selectedProduct.artist.website}}</ion-button>
+  <br><br><br><br><br><br><br><br><div class="titel">"{{selectedProduct.title}}"</div>
+   <br><div class= "artist">{{selectedProduct.artist.name}}</div>
+  </ion-content>

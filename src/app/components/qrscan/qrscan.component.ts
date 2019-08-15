@@ -8,6 +8,7 @@ import { Toast } from '@ionic-native/toast/ngx';
 import { ModalController } from '@ionic/angular';
 import { Plugins } from '@capacitor/core';
 import { Router } from '@angular/router';
+import { ModalPagePage } from '../../pages/modal-page/modal-page.page';
  
 
 @Component({
@@ -21,6 +22,7 @@ export class QrscanComponent {
   constructor(
     private barcodeScanner: BarcodeScanner,
     private datenService: JsonDataService,
+    public modalController: ModalController,
     private toast: Toast,
     private router: Router,) { 
 
@@ -29,6 +31,14 @@ export class QrscanComponent {
   ArPage() {
 
     this.router.navigate(['/tabs/tab2/ar']);
+  }
+
+  async showModal() {
+    const modal = await this.modalController.create({
+      component: ModalPagePage
+    });
+
+    modal.present();
   }
 
 }

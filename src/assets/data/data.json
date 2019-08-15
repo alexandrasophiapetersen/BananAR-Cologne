@@ -8,7 +8,7 @@
             "longitude": 6.912467,
             "street": "Venloer Str. 429"
          },
-         "title": "“Ohne dich würde ich mich nicht trauen.”",
+         "title": "Ohne dich würde ich mich nicht trauen.",
          "artist": {
             "name": "Jasmin Siddiqui und Falk Lehmann alias Herakut",
             "website": "http://www.herakut.de"
@@ -25,11 +25,11 @@
          "id": 2,
          "qrcode": "2",
          "location": {
-            "latitude": 50.951911,
-            "longitude": 6.915215,
+            "latitude": 50.951469,
+            "longitude": 6.914886,
             "street": "Schönsteinstr. 1A"
          },
-         "title": "Unbekannt",
+         "title": "Edelweißpiraten",
          "artist": {
             "name": "Captain Borderline",
             "website": "http://captainborderline.org"
@@ -42,6 +42,7 @@
             }
          }
       },
+	    
       {
          "id": 3,
          "qrcode": "3",
@@ -56,12 +57,181 @@
             "website": "www.gpocrew.tk"
          },
          "information": {
-            "text": "Bild beschäftigt sich mit kölner Geschichte: Zerstörtes Köln, Kunsthandel im Mittelalter. Stil: Toy Graffiti.",
+            "text": "Bild beschäftigt sich mit kölner Geschichte: Zerstörtes Köln, Kunsthandel im Mittelalter. Stil: Toy Graffiti.",
             "gallery": {
                "picturemap": "https://lowcdn.com/t/454becc51136-668cd04c2a/2048/orig/v1",
                "picturemapcredit": "Dieter Weinkauf"
             }
          }
+      },
+	  {
+         "id": 4,
+         "qrcode": "4",
+         "location": {
+            "latitude": 50.949567,
+            "longitude": 6.922976,
+            "street": "Körnerstr. 57"
+         },
+         "title": "eine Art Haus",
+         "artist": {
+            "name": "Various Artists",
+            "website": "http://www.eine-art-haus.de/"
+         },
+         "information": {
+            "text": "Ein Haus, das bis zum Abriss als Kunstwerk besteht und Künstlern sowohl innen als auch außen als Leinwand dient",
+            "gallery": {
+               "picturemap": "https://www.ksta.de/image/28556874/2x1/940/470/dd4ef40e3a74feb17232c4199d0323e/RD/eine-art-haus-von-aussen-ehrenfeld.jpg",
+               "picturemapcredit": "Rösgen"
+            }
+         }
+      },
+	  {
+         "id": 5,
+         "qrcode": "5",
+         "location": {
+            "latitude": 50.944293,
+            "longitude": 6.923975,
+            "street": "Vogelsangerstr. 28-32"
+         },
+         "title": "Kniender Mönch",
+         "artist": {
+            "name": "Claudio Ethos",
+            "website": "https://www.instagram.com/claudioethos/?hl=de"
+         },
+         "information": {
+            "text": "Metapher zur Rolle der Mönche bei der Kolonialisierung Südamerikas 2011",
+            "gallery": {
+               "picturemap": "https://koeln.mitvergnuegen.com/wp-content/uploads/sites/4/2018/02/koelle_thumb_1252b-680x383.jpg",
+               "picturemapcredit": "Christin Otto"
+            }
+         }
+      },
+	  {
+         "id": 6,
+         "qrcode": "6",
+         "location": {
+            "latitude": 50.950177,
+            "longitude": 6.918242,
+            "street": "Hansemannstr. 13"
+         },
+         "title": "Direction Sky",
+         "artist": {
+            "name": "Zezao(BRA)",
+            "website": "https://www.instagram.com/zezao_sp/?hl=de"
+         },
+         "information": {
+            "text": "Im Zuge des City Leak festivals 2013 erstellt.",
+            "gallery": {
+               "picturemap": "http://cityleaks-festival.de/wp-content/uploads/2017/01/Zez%C3%A5o_Hansemannstrasse13_CityLeaks2013_photo_Robert_Winterkl.jpg",
+               "picturemapcredit": "Cityleaks-festival.de"
+            }
+         }
+      },
+	  {
+         "id": 7,
+         "qrcode": "7",
+         "location": {
+            "latitude": 50.950742,
+            "longitude": 6.922978,
+            "street": "Grimmstr. 13"
+         },
+         "title": "51 perCent Münze",
+         "artist": {
+            "name": "Captain Borderline",
+            "website": "http://captainborderline.org/"
+         },
+         "information": {
+            "text": "Eine Insel, auf der wenige, sehr wohlhabende  Menschen abgeschieden ihr Leben verbringen. Oxfam schätzt, dass die reichsten 1 Prozent der Weltbevölkerung mehr als 50 Prozent des weltweiten Wohlstands besitzen. Viele der Menschen auf dem Bild strebennach dieser Insel, manche drehen aber zum alternativen Modell des Mexikanischen Künstlers im rechten Teil des Bildes ab: eine gerechtere Welt",
+            "gallery": {
+               "picturemap": "https://scontent-atl3-1.cdninstagram.com/vp/e67c839a992f723b3dbf4c5c51ca689a/5D33712E/t51.2885-15/e35/51159512_365806360668992_8658718612997377995_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com",
+               "picturemapcredit": "Captain Borderline"
+            }
+         }
+      },
+	    {
+         "id": 8,
+         "qrcode": "8",
+         "location": {
+            "latitude": 50.952952,
+            "longitude": 6.912467,
+            "street": "Vogelsangerstr. 17"
+         },
+         "title": "Unnamed",
+         "artist": {
+            "name": "INTI",
+            "website": "https://www.facebook.com/INTI.artist"
+         },
+         "information": {
+            "text": " Div. Elemente deuten auf die indigene Kultur Südamerikas hin, Ambivalente Haltung der Figur: Einerseits einladend, die Schätze Südameriaks darreichend, andererseits wehrhaft und Einhalt gebietend ",
+            "gallery": {
+               "picturemap": "https://bke-koeln.de/images/Berichte/20162017/City_Leaks2.JPG",
+               "picturemapcredit": "http://www.herakut.de"
+            }
+         }
+      },
+	  {
+         "id": 9,
+         "qrcode": "9",
+         "location": {
+            "latitude": 50.951413,
+            "longitude": 6.919174,
+            "street": "Stammstr. 3"
+         },
+         "title": "Ehrenfeld Sureral",
+         "artist": {
+            "name": "Goodlack Art",
+            "website": "https://www.instagram.com/goodlack_art/"
+         },
+         "information": {
+            "text": " 2018 als neues Gesamtkonzept zur Gestaltung des Bahnhofs Ehrenfelds. Gesamtfläche 2500qm über zwei Tunnel. Dieser Tunnel ist im Stile Dali gehalten und zeigt weite surreale langschaften in denen einzelne Elemente das Lebensgefühl Ehrenfelds wiederspiegeln.",
+            "gallery": {
+               "picturemap": "http://goodlack-art.com/fileadmin/_processed_/csm_goodlack_db_surreal_front_195b9dcb04.jpg",
+               "picturemapcredit": "http://goodlack-art.com"
+            }
+         }
+      },
+	  {
+         "id": 10,
+         "qrcode": "10",
+         "location": {
+            "latitude": 50.951306,
+            "longitude": 6.917015,
+            "street": "Ehrenfeldgürtel 95"
+         },
+         "title": "Verloren in der Stadt",
+         "artist": {
+            "name": "Xabier Anunzibai (Xabier Xtrm)",
+            "website": "https://www.instagram.com/xabier_anunzibai/"
+         },
+         "information": {
+            "text": "Der abbröckelnde Putz ist absichtliches Stilelement, das Mural ist ansonsten jedoch eher untypisch für diesen Künslter, der gerne auch Nägel, Schnüre, Holz und eigens gestaltete Skateboards in seinen Werken verwendet.",
+            "gallery": {
+               "picturemap": "https://koeln.mitvergnuegen.com/wp-content/uploads/sites/4/2018/02/726b94_942f4a9bb0cf48458b03b8a05587a0ed-e1518398318355-680x383.jpg",
+               "picturemapcredit": "Christin Otto"
+            }
+         }
+      },
+	  {
+         "id": 11,
+         "qrcode": "11",
+         "location": {
+            "latitude": 50.952280,
+            "longitude": 6.914720,
+            "street": "Senefelder Straße 4 – 6"
+         },
+         "title": "Hase",
+         "artist": {
+            "name": "ROA",
+            "website": "https://www.instagram.com/roa_archive/?hl=de"
+         },
+         "information": {
+            "text": " Mit seinen typisch morbiden Tieren will er uns zeigen wie pervertiert unsere Einstellung zu Tieren geworden ist. Er zeigt mit „Hase“ die Kehrseite des Fleischessens.",
+            "gallery": {
+               "picturemap": "https://www.sy-yemanja.de/wp-content/uploads/2018/09/Street-Art-Ehrenfeld-Tomy-0067.jpg",
+               "picturemapcredit": "https://www.sy-yemanja.de"
+            }
+         }
       }
+	  
    ]
 }
