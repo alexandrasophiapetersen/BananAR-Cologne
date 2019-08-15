@@ -91,7 +91,8 @@ this.qrscan();
    async showModal() {
     const modal = await this.modalController.create({
       component: ModalPagePage,
-      cssClass: 'modal-transparency'
+      cssClass: 'modal-transparency',
+      backdropDismiss: true
     });
 
     modal.present();
