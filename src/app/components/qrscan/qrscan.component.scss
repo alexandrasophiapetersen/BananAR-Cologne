@@ -1,30 +1,28 @@
-
 ion-img {
-    width: 200px;
-    height: 200px;
-    margin: auto;
+  width: 200px;
+  height: 200px;
+  margin: auto;
 }
 
 ion-content {
---background: #f1f1f1;
---padding-start: 15px;
---padding-end: 15px;
-
+  --background: #f1f1f1;
+  --padding-start: 15px;
+  --padding-end: 15px;
 }
 
 .qrscan {
-    width: 100px;
-    height: 50px;
-    margin-bottom: 15px;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 15px;
 }
 
 .qrscancontent {
-    --background: #fffdfd;
-    margin: auto;
-    text-align: center;
-    font-weight: 300;
-    font-size: 17px;
-    padding-inline-end: 30px;
-    padding-inline-start: 30px;
-    padding-top: 10px;
+  --background: #fffdfd;
+  margin: auto;
+  text-align: center;
+  font-weight: 300;
+  font-size: 17px;
+  padding-inline-end: 30px;
+  padding-inline-start: 30px;
+  padding-top: 10px;
 }

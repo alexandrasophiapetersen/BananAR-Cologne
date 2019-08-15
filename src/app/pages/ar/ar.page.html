@@ -1,14 +1,22 @@
 <ion-header>
-    <ion-toolbar text-center>
-        <ion-buttons slot="start" defaultHref = "/tabs/tab2"  >
-          <ion-back-button></ion-back-button>
-        </ion-buttons>
-      <ion-title>AR</ion-title>
-    </ion-toolbar>
-  </ion-header>
-<ion-content *ngIf="productFound"><ion-button class="detailseite" (click)= "Details()">Detailseite</ion-button></ion-content>
-  <ion-content  *ngIf="productFound">
-      <ion-button class="website" (click)="open()">{{selectedProduct.artist.website}}</ion-button>
-  <br><br><br><br><br><br><br><br><div class="titel">"{{selectedProduct.title}}"</div>
-   <br><div class= "artist">{{selectedProduct.artist.name}}</div>
-  </ion-content>
+  <ion-toolbar text-center>
+    <ion-buttons slot="start" defaultHref="/tabs/tab2">
+      <!-- Backbutton um zur QR-Scan Startseite zurückzukehren. Diese Seite bleibt solange in Tab2 geöffnet, bis dieser Button gedrückt wurde. -->
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>AR</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content *ngIf="productFound">
+  <ion-button class="detailseite" (click)="Details()">Detailseite</ion-button>
+</ion-content> <!-- Wenn productFound = true, werden dieser Button mit der Detailseite eingefügt.-->
+<ion-content *ngIf="productFound">
+  <!-- Wenn productFount = true werden diese HTML-Objekte eingeblendet-->
+  <ion-button class="website" (click)="open()">{{selectedProduct.artist.website}}</ion-button>
+  <!--Datenausgabe des Datensatzes in selectedProduct-->
+  <br><br><br><br><br><br><br><br>
+  <div class="titel">"{{selectedProduct.title}}"</div> <!-- ""-->
+  <br>
+  <div class="artist">{{selectedProduct.artist.name}}</div>
+  <!--"" -->
+</ion-content>

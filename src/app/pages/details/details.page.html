@@ -1,6 +1,7 @@
 <ion-header>
   <ion-toolbar text-center>
-    <ion-buttons slot="start" defaultHref = "/tabs/tab1" >
+    <ion-buttons slot="start" defaultHref="/tabs/tab1">
+      <!-- Back Button zu Google Maps. Diese Seite bleibt solange in Tab1 geöffnet, bis der Button gedrückt wurde. -->
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>Murals</ion-title>
@@ -10,8 +11,12 @@
 <ion-content>
   <ion-list>
     <ion-item detail *ngFor="let daten of datenData" (click)="getDatenDetails(daten)">
-    <ion-icon src="../../../assets/icon/LogoMakr_4zyT32 (1).svg"></ion-icon>{{ daten.title }}
-    <br>{{ daten.location.street }}
-  </ion-item>
+      <!-- Liste mit Items. Jeder Item ergibt ein Datensatz der durch datenData übergeben wird. Durch Click auf den Button, wird die individuelle Detailseite ausgegeben. Dies hätte genauso gelöst werden können (durch Router und Navextra), wie in ar.page, da dem Tutorial: "https://edupala.com/how-to-add-google-map-in-ionic-4/" gefolgt wurde, wurde jedoch darauf verzichtet. -->
+      <ion-icon src="../../../assets/icon/LogoMakr_4zyT32 (1).svg"></ion-icon>{{ daten.title }}
+      <!-- Daten der Datenbank  -->
+      <br>{{ daten.location.street }}
+    </ion-item>
   </ion-list>
 </ion-content>
+
+<!-- Diese Seite zeigt eine Liste mit allen gescannten (druch den QR-Code) Datensätzen an. -->

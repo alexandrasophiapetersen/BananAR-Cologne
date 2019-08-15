@@ -1,8 +1,9 @@
 <ion-header>
   <ion-toolbar>
-      <ion-buttons slot="start" defaultHref = "/tabs/tab1/details" >
-        <ion-back-button></ion-back-button>
-      </ion-buttons>
+    <ion-buttons slot="start" defaultHref="/tabs/tab1/details">
+      <!-- BackButton zur D-->
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title text-center>{{ daten.location.street }}</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -11,10 +12,14 @@
   <ion-card padding>
     <h2 text-center>{{ daten.title }} </h2>
     <h3>Artist: </h3> {{ daten.artist.name }}
-     <h3>Website:</h3><ion-button (click)="open()"> {{daten.artist.website}} </ion-button>
-    <br> <h3>Beschreibung:</h3>{{ daten.information.text }}
+    <h3>Website:</h3>
+    <ion-button (click)="open()"> {{daten.artist.website}} </ion-button>
+    <br>
+    <h3>Beschreibung:</h3>{{ daten.information.text }}
     <br>
     <br>
     <img [src]="daten.information.gallery.picturemap">
   </ion-card>
 </ion-content>
+
+<!-- Diese Seite ist eine Detailseite für jeden Datensatz der Datenbank und zeigt somit die wichtigsten Details zu einem einzigen Mural.-->

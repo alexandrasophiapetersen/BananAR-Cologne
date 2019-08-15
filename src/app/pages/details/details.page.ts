@@ -9,24 +9,28 @@ import { ArPage } from '../ar/ar.page';
 @Component({
   selector: 'app-details',
   templateUrl: './details.page.html',
-  styleUrls: ['./details.page.scss'],
+  styleUrls: ['./details.page.scss']
 })
 export class DetailsPage {
-datenData = [];
-@ViewChild(ArPage) ar: ArPage;
+  datenData = [];
+  @ViewChild(ArPage) ar: ArPage;
 
-  constructor(
-    private router: Router,
-    private datenService: JsonDataService
-
-  ){fetch('../../../assets/data/data.json').then(res => res.json()).then(data => {
-      this.datenData = data.jsondata;
-      this.datenService.setJsondata(this.datenData);
-    });
+  constructor(private router: Router, private datenService: JsonDataService) {
+    fetch('../../../assets/data/data.json')
+      .then(res => res.json())
+      .then(data => {
+        /** Hole Daten der json.data */
+        this.datenData = data.jsondata;
+        this.datenService.setJsondata(this.datenData);
+      });
   }
 
   getDatenDetails(daten) {
-    this.datenService.setDaten(daten);
-    this.router.navigate(['/tabs/tab1/details/json-detail']);
+    this.datenService.setDaten(
+      daten
+    ); /** Übergabe der Daten an Json-Detail. (Hätte auch durch NavigationExtras gelöst werden können). */
+    this.router.navigate([
+      '/tabs/tab1/details/json-detail'
+    ]); /** Weiterleitung auf Json-Detail. */
   }
 }

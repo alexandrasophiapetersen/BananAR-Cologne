@@ -19,3 +19,4 @@ export interface Daten{
     };
   };
 }
+/** Diese Datei definiert die Struktur der data.json Datei **/

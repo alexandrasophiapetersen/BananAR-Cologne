@@ -75,7 +75,7 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
-
+/** In dieser Datei werden allgemeine CSS Properties für alle Pages festgelegt. Zudem wurde ein font für die Überschriften hinzugefügt: bombing.ttf von https://www.dafont.com/bombing.font */ 
 @font-face {
   font-family: "application";
   font-style: normal;
@@ -83,30 +83,30 @@
   src: url("../assets/fonts/Bombing.ttf");
 }
 
-ion-title {
+ion-title { /** Schriftart für die Überschriften der Seite **/
   font-family: "application";
   font-size: 30px;
   color: yellow;
   margin: auto;
 }
 
-ion-toolbar {
+ion-toolbar { /** Hintergundfarbe der Titelleiste **/
   --background: #292929;
 }
 
-ion-content.map {
+ion-content.map { /** wichtig, damit die map im Vordergrund angezeigt wird. **/
   --background: transparent !important;
   background: none !important;
 }
 
-ion-button {
+ion-button { /** CSS Properties für alle Buttons in dieser App **/
 --background: #424242;
 margin-inline-start: 7px;
 margin-inline-end: 8px;
 height: 30px;
 font-size: 12px;
 }
-ion-content.transparent {
+ion-content.transparent { /** Um Camerapreview möglich zu machen **/
   --background: transparent !important;
   background: none !important;
 }

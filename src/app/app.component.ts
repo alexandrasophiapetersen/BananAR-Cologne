@@ -14,7 +14,7 @@ export class AppComponent {
   ) {
   SplashScreen.hide().catch((err) => { 
      /** Cordova SplashScreen und Statusbar werden versteckt,
-      *  da diese Cordova Plugins sind und durch eigene Dateien ersetzt werden sollen. */
+      *  und nicht verwendet. */
     console.warn(err);
   });
 

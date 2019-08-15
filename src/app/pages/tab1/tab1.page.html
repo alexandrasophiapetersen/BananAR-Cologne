@@ -3,12 +3,17 @@
     <ion-title>
       StreetARt Map
     </ion-title>
-    <ion-button slot="start" [routerLink]="['/tabs/tab1/details']" routerLinkActive="router-link-active" >Details</ion-button>
-    <ion-button slot ="end" (click)="setLocation()"><ion-icon slot="icon-only" name="pin"></ion-icon></ion-button>
+    <ion-button slot="start" [routerLink]="['/tabs/tab1/details']" routerLinkActive="router-link-active">Details
+    </ion-button> <!-- Weiterleitung zu der Detailseite.-->
+    <ion-button slot="end" (click)="setLocation()">
+      <ion-icon slot="icon-only" name="pin"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
-  <ion-content>
-    <google-map apiKey="AIzaSyCr2jbRc3lc6dgBT9OC1begPdjoC_thx7A"></google-map>
-    
-  </ion-content>
+<ion-content>
+  <google-map apiKey="AIzaSyCr2jbRc3lc6dgBT9OC1begPdjoC_thx7A"></google-map> <!-- Component Google Maps -->
+
+</ion-content>
+
+<!-- Diese Seite zeigt Google Maps, sowie indiviudelle Marker aus der Datenabnk an. -->

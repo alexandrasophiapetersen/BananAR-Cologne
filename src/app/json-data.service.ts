@@ -13,12 +13,12 @@ export class JsonDataService {
   constructor() { }
 
   setJsondata(data) {
-    this.jsondata = data; /** data in Array speichern */
+    this.jsondata = data; /** Daten an Array übergeben */
     console.log(data);
   }
 
   getJsondata() {
-    return this.jsondata; /** Array ausgeben */
+    return this.jsondata; /** Daten ausgeben */
   }
 
   setDaten(data) {

@@ -22,7 +22,7 @@ import { ModalPagePageModule } from './pages/modal-page/modal-page.module';
   imports: [BrowserModule, IonicModule.forRoot(), IonicStorageModule.forRoot(), AppRoutingModule, HttpClientModule, ModalPagePageModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    BarcodeScanner, Toast, CameraPreview
+    BarcodeScanner, Toast, CameraPreview /** Hier eingfügt um Verwendung auf allen Pages möglich zu machen */
   ],
   bootstrap: [AppComponent]
 })

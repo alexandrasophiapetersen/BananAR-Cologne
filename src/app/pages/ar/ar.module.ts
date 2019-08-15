@@ -11,7 +11,7 @@ import { QrScanModule } from 'src/app/components/qrscan/qrscan.module';
 const routes: Routes = [
   {
     path: '',
-    component: ArPage,
+    component: ArPage
   }
 ];
 
@@ -26,4 +26,3 @@ const routes: Routes = [
   declarations: [ArPage]
 })
 export class ArPageModule {}
-

@@ -8,7 +8,7 @@ import { IonicModule } from '@ionic/angular';
 import { TabsPage } from './tabs.page';
 
 /** Damit das Routing funktioniert muss das RouterModule importiert werden. Tabs ist der Haupt-Pfad der Application.
- * Von ihm aus, gehen alle anderen Pfade und Seiten aus (siehe children). 
+ * Von ihm aus, gehen alle anderen Pfade und Seiten aus (siehe children).
  * Die App ist aufgeteilt in die Seiten Tab 1 (Google Maps), Tab2 (QRScanner),
  * Detailseite mit der Liste aller Murals, die Detailseite aller einzelnen Murals
  * und der AR-Seite mit dem QRScanner und der anschließenden Camera Preview. */
