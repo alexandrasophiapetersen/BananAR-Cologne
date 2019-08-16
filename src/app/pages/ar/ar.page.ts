@@ -63,6 +63,7 @@ export class ArPage implements OnInit {
         ); /** Wenn der Text des QR-Codes mit dem qrcode der Json Datei übereinstimmt, wird productFound auf true gesetzt, die CameraPreview und das Modal geöffnet. */
         if (this.selectedProduct !== undefined) {
           this.productFound = true;
+          this.selectedProduct.setJsondata("boolean", true)
           this.camerapreview();
           this.showModal();
         } else {

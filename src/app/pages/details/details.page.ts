@@ -11,7 +11,7 @@ import { ArPage } from '../ar/ar.page';
   templateUrl: './details.page.html',
   styleUrls: ['./details.page.scss']
 })
-export class DetailsPage {
+export class DetailsPage implements OnInit{
   datenData = [];
   @ViewChild(ArPage) ar: ArPage;
 
@@ -25,6 +25,9 @@ export class DetailsPage {
       });
   }
 
+  ngOnInit() {
+    this.datenData = this.datenService.getJsondata();
+  }
   getDatenDetails(daten) {
     this.datenService.setDaten(
       daten
