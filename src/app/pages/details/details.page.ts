@@ -36,7 +36,5 @@ export class DetailsPage implements OnInit{
     this.router.navigate([
       '/tabs/tab1/details/json-detail'
     ]); /** Weiterleitung auf Json-Detail. */
-    console.log(daten);
   }
-
 }

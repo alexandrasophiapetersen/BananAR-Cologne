@@ -28,7 +28,7 @@ export class ArPage implements OnInit {
   selectedProduct: any;
   productFound = false; /** Wenn boolean = true, werden die Daten in der HTML Seite ausggeben. */
   fileName = 'data.json';
-  dataDirectory = '../../../assets/data';
+  dataDirectory = this.file.applicationDirectory + 'assets/data/';
   object = {boolean: true};
   constructor(
     private barcodeScanner: BarcodeScanner,
