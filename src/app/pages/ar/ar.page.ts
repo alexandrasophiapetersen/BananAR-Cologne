@@ -6,6 +6,7 @@ import { DOCUMENT } from '@angular/common';
 import { Toast } from '@ionic-native/toast/ngx';
 import { Router, NavigationExtras } from '@angular/router';
 import { NavController, ModalController } from '@ionic/angular';
+import { File } from '@ionic-native/file/ngx';
 import {
   CameraPreview,
   CameraPreviewOptions
@@ -26,7 +27,9 @@ export class ArPage implements OnInit {
   datenData = [];
   selectedProduct: any;
   productFound = false; /** Wenn boolean = true, werden die Daten in der HTML Seite ausggeben. */
-
+  fileName = 'data.json';
+  dataDirectory = '../../../assets/data';
+  object = {boolean: true};
   constructor(
     private barcodeScanner: BarcodeScanner,
     private datenService: JsonDataService,
@@ -36,6 +39,7 @@ export class ArPage implements OnInit {
     public navCtrl: NavController,
     private cameraPreview: CameraPreview,
     private platform: Platform,
+    public file: File,
     // tslint:disable-next-line: variable-name
     @Inject(DOCUMENT) private _document
   ) {
@@ -60,10 +64,10 @@ export class ArPage implements OnInit {
         // tslint:disable-next-line: max-line-length
         this.selectedProduct = this.datenData.find(
           daten => daten.qrcode === barcodeData.text
-        ); /** Wenn der Text des QR-Codes mit dem qrcode der Json Datei übereinstimmt, wird productFound auf true gesetzt, die CameraPreview und das Modal geöffnet. */
+        ); /** Wenn der Text des QR-Codes mit dem Qrcode der Json Datei übereinstimmt, wird productFound auf true gesetzt, die CameraPreview und das Modal geöffnet. */
         if (this.selectedProduct !== undefined) {
           this.productFound = true;
-          this.selectedProduct.setJsondata("boolean", true)
+          this.setJson(this.fileName, this.object);
           this.camerapreview();
           this.showModal();
         } else {
@@ -84,6 +88,9 @@ export class ArPage implements OnInit {
         });
       }
     );
+  }
+  setJson(fileName, object) {
+    this.file.writeFile(this.dataDirectory,this.fileName, JSON.stringify(this.object), {append: true, replace: false});
   }
 
   camerapreview() {
@@ -128,4 +135,6 @@ export class ArPage implements OnInit {
     };
     this.router.navigate(['/tabs/tab2/ar/ar-detail'], navigationExtras);
   }
+
+
 }

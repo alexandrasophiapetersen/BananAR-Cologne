@@ -14,6 +14,7 @@ import { TabsPage } from './pages/tabs/tabs.page'; /** importieren des Hauptpfad
 import { Toast } from '@ionic-native/toast/ngx'; /** Import des Toast Plugins zum Ausgeben von Alerts/Meldungen */
 import { CameraPreview } from '@ionic-native/camera-preview/ngx'; /** Import des Cordova Plugins Camera Preview, */
 import { ModalPagePageModule } from './pages/modal-page/modal-page.module';
+import { File } from '@ionic-native/file/ngx';
  /** um eine Kameravorschau mit HTML Elementen möglich zu machen */
 
 @NgModule({
@@ -22,7 +23,7 @@ import { ModalPagePageModule } from './pages/modal-page/modal-page.module';
   imports: [BrowserModule, IonicModule.forRoot(), IonicStorageModule.forRoot(), AppRoutingModule, HttpClientModule, ModalPagePageModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    BarcodeScanner, Toast, CameraPreview /** Hier eingfügt um Verwendung auf allen Pages möglich zu machen */
+    BarcodeScanner, Toast, CameraPreview, File /** Hier eingfügt um Verwendung auf allen Pages möglich zu machen */
   ],
   bootstrap: [AppComponent]
 })

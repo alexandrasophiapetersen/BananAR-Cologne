@@ -6,6 +6,7 @@ import { NavController } from '@ionic/angular';
 import { JsonDataService } from '../../json-data.service';
 import { ArPage } from '../ar/ar.page';
 
+
 @Component({
   selector: 'app-details',
   templateUrl: './details.page.html',
@@ -35,5 +36,7 @@ export class DetailsPage implements OnInit{
     this.router.navigate([
       '/tabs/tab1/details/json-detail'
     ]); /** Weiterleitung auf Json-Detail. */
+    console.log(daten);
   }
+
 }
