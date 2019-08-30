@@ -8,17 +8,17 @@
 	Konzept:
 	Das Kursthema Augmented City lud dazu ein, sich mit der optischen Entwicklung Kölns und unserer Neugier über 
 	Streetart zu befassen. Streetart, welche wir im Alltag im Vorbeigehen betrachten, jedoch nie mit der selben 
-	Aufmerksamkeit wie Kunstwerke in einem Museum. Hinzu kommt, dass dem Betrachter eines Murals durch vage 		Zusammensetzungen
-	aus Suchbegriffen im Internet zusätzliche Informationen gegeben werden können. 
+	Aufmerksamkeit wie Kunstwerke in einem Museum. Hinzu kommt, dass dem Betrachter eines Murals durch vage
+	Zusammensetzungen aus Suchbegriffen im Internet zusätzliche Informationen gegeben werden können. 
 	
 	Die interaktive Streetart App "BananAR Cologne" vereint das Prinzip eines virtuellen Museums und Geocaching.
 	Dem Benutzer stehen eine begrenzte Auswahl an Murals in Ehrenfeld zur Verfügung, welche unabhängig von der Tageszeit
 	und der Reihenfolge suchen kann Anschließend ist es über die App möglich Informationen zu den Werken in einem 
-	AR-Overlay
-	zu erhalten. 
+	AR-Overlayzu erhalten. 
 	
 	Mit Hilfe der Standortlokalisierung sieht der Benutzer, wo er sich derzeit befindet (Bild 1). Die nächstgelegenen
-	Murals sind auf der Karte anhand von Icons zu sehen (Bild 2). Durch diese Icons wird nicht vorweggenommen, wie das 	   Mural aussieht. 
+	Murals sind auf der Karte anhand von Icons zu sehen (Bild 2). Durch diese Icons wird nicht vorweggenommen, wie das
+	Mural aussieht. 
 	Der Benutzer soll das Wandbild selbst entdecken und einen QR-Code finden, welcher eingescannt werden kann (Bild 3).
 	Die App greift auf die Kamera des Smartphones zu (Bild 4). Nach erfolgreichem Scan erscheint ein Overlay, 
 	welches darauf hindeutet, dass eine "Banane" gefunden wurde und eine Sammelfunktion existiert (Bild 5). Die
