@@ -11,7 +11,7 @@
 <ion-content>
     <p>Scanne die QR-Codes der Murals, um die passende Detailseite freizuschalten und hier zu sammeln.</p>
   <ion-list>
-    <ion-item *ngFor="let daten of datenData" (click)="getDatenDetails(daten)"> <!-- *ngIf="daten.boolean === true", damit nur die Details angezeigt werden, die freigeschaltet sind--> 
+    <ion-item detail *ngFor="let daten of datenData" (click)="getDatenDetails(daten)"> <!-- *ngIf="daten.boolean === true", damit nur die Details angezeigt werden, die freigeschaltet sind--> 
       <!-- Liste mit Items. Jeder Item ergibt ein Datensatz der durch datenData übergeben wird. Durch Click auf den Button, wird die individuelle Detailseite ausgegeben. Dies hätte genauso gelöst werden können (durch Router und Navextra), wie in ar.page, da dem Tutorial: "https://edupala.com/how-to-add-google-map-in-ionic-4/" gefolgt wurde, wurde jedoch darauf verzichtet. -->
       <ion-icon src="../../../assets/icon/LogoMakr_4zyT32 (1).svg"></ion-icon>{{ daten.title }}
       <!-- Daten der Datenbank  -->
