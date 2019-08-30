@@ -40,8 +40,57 @@
 	Mitte. 
 	
 	Daten: 
+	Alle Daten wurden vor Ort in Ehrenfeld gesammelt und gegen Endes des Projektes nochmals abgeblichen und erneuert,
+	da zwei der Locations zwischenzeitlich überstrichen oder von Neubauten verdeckt wurden. GPS Daten wurden vor Ort 
+	ausgelesen und Zusatzinformationen im Internet recherchiert. Zusatzinfornationen sind die Straße,der Titel, 
+	Informationstext und ein Vorschaubild des Murals, sowie der Name und die Website/das Instagram des Künstlers. 
 	
-	Technische Umsetzung: 
+	Eine JSON Datei wurde erstellt, um die Informationen einzulesen. Der Aufbau der JSON wurde nach den Bedingungen
+	des Projektes angepasst. Zudem wurde jedes Mural mit einer ID/ einem QR-Code und einer Variable des Typs Boolean 
+	versehen. 
+	
+	Die QR Codes mit korrespondierender ID als Textinahlt wurden mit dem Online-Tool Tool https://www.qrcode-monkey.com/ 
+	erstellt und stilistisch an das Design der App angepasst. Anschließend wurden diese ausgedruckt und vor Ort in Form 
+	von Stickern angebracht. 
+	
+	Technische Umsetzung: Die technische Umsetzung der App lief größtenteils erfolgreich. Viele Komponenten konnten 
+	umgesetzt werden. Eine jedoch nicht.  
+	
+	Die App selbst baut sich wie folgt auf: Startseite ist "tab1.page.html". Die HTML Seite enthält neben Toolbar und 
+	Weiterleitung zu der Liste der Details, die Komponente "google-map". In dieser Komponente wird die Map geladen und 
+	gerendert, sowie die Marker ausgegeben. Die Map selbst wird dank des Google API Keys von Google zur Verfügung 
+	gestellt. Die Startseite enthält zudem die Funktion "setLocation()". So kann der User seinen Standort und die ihm zur 
+	Verfügung stehenden Murals in der Nähe sehen. Je nach Standort des Users wird die Map auf einen bestimmten Bereich 
+	zentriert. An dieser Stelle ist wichtig zu erwähnen, dass die App ursprünglich mit dem Capacitor gebaut werden sollte. 
+	Daher ist der Code dementsprechend anders geschrieben, als zb. der Code des QR-Scanners. 
+	
+	Durch Klicken auf das Icon der Banane im Tabmenü am unteren Bildschirmrand gelangt der User zu der Seite 
+	"tab2.page.html". Dort eingebaut ist die Komponente "qrscan". Diese Komponente ermöglicht die Scan-Funktion der App.
+	Dort wird zunächst erläutert, wie das Scannen eines QR-Codes funktioniert und wie der QR-Code aussieht. Durch das 
+	Klicken auf den Button "Scan" wird der User auf die Seite ar.page.html weitergeleitet. Der Barcode Scanner ist ein 
+	Plugin von Cordova. Dieses Plugin wird ausgelöst, sobald die Seite geladen wurde. Nach erfolgreicher Erlaubnis öffnet 
+	sich die Kamera und es ist möglich einen QR-Code zu scannen. Sollte ein unbekannter QR-Code gescannt werden, so wird
+	eine Fehlermeldung angezeigt. Bei erfolgreichem Scan wird das Plugin Camera Preview gestartet. Dieses Plugin entstammt 
+	ebenfalls dem Cordova Framework. Da dieses Plugin nicht mit dem Capacitor funktioniert, muss der Build mit Cordova 
+	durchgeführt werden. Es gab zunächst Probleme mit der Implementierung der Camera Preview. Diese konnten jedoch dank 
+	des Forums Stackoverflow gelöst werden 
+	(https://stackoverflow.com/questions/57383758/ionic-4-cordova-camera-preview-is-hiding-html-elements-even-though-toback-is).
+	
+	Über den Content der Camera Preview wird zunächst das Modal "modal-page.html" gelegt. Dieses Modal zeigt an, dass der 
+	Nutzer eine Banane gefunden hat und schließt sich erst dann wieder, wenn der Einsammeln-Button betätigt wurde. 
+	Anschließend sind die Overlays in der Camera Preview zu sehen. Diese Overlays sind HTML-Elemente und mit Daten aus der
+	JSON Datei gefüllt. Für weitere Informationen kann der User über den Button auf die zugehörige Detailseite des Murals 
+	"ar-details.page.html gelangen.
+	
+	Nun zu der Komponente die nicht erfolgreich implementiert werden konnte: die Einsammelfunktion der Bananen und somit
+	die Freischaltfunktion der Detailseiten in der Liste "details.page.html". Die Liste ist von der Startseite aus 
+	zugänglich und sollte ursprünglich nur die Detailseiten der bereits gescannten QR-Codes der jeweiligen Murals anzeigen 
+	(json-detail.page.html). Es wurde versucht eine Variable des Tyos Boolean in der JSON Datei von false zu true zu 
+	setzen. So sollten nur die Detailseiten angezeigt werden, wo der boolean gleich true ist. Dies ist uns leider nicht 
+	gelungen. Der Versuch ist in der Datei ar-page.ts dokumentiert bzw. auskommentiert. Es wurde sich zudem erneut an das 
+	Forum Stackoverflow gewandt. Eine detaillierte Antwort ist vorhanden 
+	(https://stackoverflow.com/questions/57536895/ionic-4-change-boolean-in-data-json-to-true-after-scanning-a-qr-code). 
+	Diese konnte jedoch nicht implementiert werden, da es zeitlich nicht möglich war, die komplette App umzuschreiben. 
 	
 	
 	
