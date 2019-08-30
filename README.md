@@ -53,8 +53,10 @@
 	erstellt und stilistisch an das Design der App angepasst. Anschließend wurden diese ausgedruckt und vor Ort in Form 
 	von Stickern angebracht. 
 	
-	Technische Umsetzung: Die technische Umsetzung der App lief größtenteils erfolgreich. Viele Komponenten konnten 
-	umgesetzt werden. Eine jedoch nicht.  
+	Technische Umsetzung: 
+	Die technische Umsetzung der App lief größtenteils erfolgreich. Viele Komponenten konnten 
+	umgesetzt werden. Eine jedoch nicht.  Gearbeitet wurde mit dem Framework Ionic und Angular Typescript, sowie Cordova
+	und Capacitor. Gearbeitet wurde damit vorher nicht. Alles wurde sich im Laufe des Semesters selbst erarbeitet.
 	
 	Die App selbst baut sich wie folgt auf: Startseite ist "tab1.page.html". Die HTML Seite enthält neben Toolbar und 
 	Weiterleitung zu der Liste der Details, die Komponente "google-map". In dieser Komponente wird die Map geladen und 
