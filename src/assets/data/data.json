@@ -2,7 +2,7 @@
    "jsondata": [
       {
          "id": 1,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "1",
          "location": {
             "latitude": 50.952952,
@@ -24,7 +24,7 @@
       },
       {
          "id": 2,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "2",
          "location": {
             "latitude": 50.951469,
@@ -47,7 +47,7 @@
 	    
       {
          "id": 3,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "3",
          "location": {
             "latitude": 50.94443,
@@ -69,14 +69,14 @@
       },
 	  {
          "id": 4,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "4",
          "location": {
             "latitude": 50.949567,
             "longitude": 6.922976,
             "street": "Körnerstr. 57"
          },
-         "title": "eine Art Haus",
+         "title": "Eine Art Haus",
          "artist": {
             "name": "Various Artists",
             "website": "http://www.eine-art-haus.de/"
@@ -91,7 +91,7 @@
       },
 	  {
          "id": 5,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "5",
          "location": {
             "latitude": 50.944293,
@@ -113,7 +113,7 @@
       },
 	  {
          "id": 6,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "6",
          "location": {
             "latitude": 50.950177,
@@ -135,7 +135,7 @@
       },
 	  {
          "id": 7,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "7",
          "location": {
             "latitude": 50.950742,
@@ -157,7 +157,7 @@
       },
 	    {
          "id": 8,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "8",
          "location": {
             "latitude": 50.952952,
@@ -179,7 +179,7 @@
       },
 	  {
          "id": 9,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "9",
          "location": {
             "latitude": 50.951413,
@@ -201,7 +201,7 @@
       },
 	  {
          "id": 10,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "10",
          "location": {
             "latitude": 50.951306,
@@ -223,7 +223,7 @@
       },
 	  {
          "id": 11,
-         "boolean": false,
+         "scanned": false,
          "qrcode": "11",
          "location": {
             "latitude": 50.952280,

@@ -1,6 +1,6 @@
 export interface Daten{
   id: any;
-  boolean: boolean;
+  scanned: boolean;
   qrcode: string;
   location: {
     latitude: any;

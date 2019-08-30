@@ -29,7 +29,7 @@ export class ArPage implements OnInit {
   productFound = false; /** Wenn boolean = true, werden die Daten in der HTML Seite ausggeben. */
   fileName = 'data.json';
   dataDirectory = this.file.applicationDirectory + 'assets/data/';
-  object = {boolean: true};
+  /** object = {scanned: true}; - fehlgeschlagener Versuch, die JSON Datei zu ändern. */
   constructor(
     private barcodeScanner: BarcodeScanner,
     private datenService: JsonDataService,
@@ -67,7 +67,7 @@ export class ArPage implements OnInit {
         ); /** Wenn der Text des QR-Codes mit dem Qrcode der Json Datei übereinstimmt, wird productFound auf true gesetzt, die CameraPreview und das Modal geöffnet. */
         if (this.selectedProduct !== undefined) {
           this.productFound = true;
-          this.setJson(this.fileName, this.object);
+          /** this.setJson(this.fileName, this.object); - fehlgeschlagener Versuch die JSON Datei zu ändern.*/ 
           this.camerapreview();
           this.showModal();
         } else {
@@ -89,9 +89,9 @@ export class ArPage implements OnInit {
       }
     );
   }
-  setJson(fileName, object) {
+  /** setJson(fileName, object) {
     this.file.writeFile(this.dataDirectory,this.fileName, JSON.stringify(this.object), {append: true, replace: false});
-  }
+  } - fehlgeschlagener Versuch, die JSON Datei zuu ändern*/
 
   camerapreview() {
     /** CameraPreview */
