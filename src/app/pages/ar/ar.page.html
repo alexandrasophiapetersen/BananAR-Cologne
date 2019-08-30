@@ -7,16 +7,16 @@
     <ion-title>AR</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content *ngIf="productFound">
+<ion-content *ngIf="qrcodeFound">
   <ion-button class="detailseite" (click)="Details()">Detailseite</ion-button>
-</ion-content> <!-- Wenn productFound = true, werden dieser Button mit der Detailseite eingefügt.-->
-<ion-content *ngIf="productFound">
-  <!-- Wenn productFount = true werden diese HTML-Objekte eingeblendet-->
-  <ion-button class="website" (click)="open()">{{selectedProduct.artist.website}}</ion-button>
-  <!--Datenausgabe des Datensatzes in selectedProduct-->
+</ion-content> <!-- Wenn qrcodeFound = true, werden dieser Button mit der Detailseite eingefügt.-->
+<ion-content *ngIf="qrcodeFound">
+  <!-- Wenn qrcodeFountd= true werden diese HTML-Objekte eingeblendet-->
+  <ion-button class="website" (click)="open()">{{selectedQrcode.artist.website}}</ion-button>
+  <!--Datenausgabe des Datensatzes in selectedQrcode-->
   <br><br><br><br><br><br><br><br>
-  <div class="titel">"{{selectedProduct.title}}"</div> <!-- ""-->
+  <div class="titel">"{{selectedQrcode.title}}"</div> <!-- ""-->
   <br>
-  <div class="artist">{{selectedProduct.artist.name}}</div>
+  <div class="artist">{{selectedQrcode.artist.name}}</div>
   <!--"" -->
 </ion-content>

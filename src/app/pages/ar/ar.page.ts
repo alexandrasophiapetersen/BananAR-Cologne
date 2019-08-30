@@ -25,8 +25,8 @@ const { Browser } = Plugins;
 })
 export class ArPage implements OnInit {
   datenData = [];
-  selectedProduct: any;
-  productFound = false; /** Wenn boolean = true, werden die Daten in der HTML Seite ausggeben. */
+  selectedQrcode: any;
+  qrcodeFound = false; /** Wenn boolean = true, werden die Daten in der HTML Seite ausggeben. */
   fileName = 'data.json';
   dataDirectory = this.file.applicationDirectory + 'assets/data/';
   /** object = {scanned: true}; - fehlgeschlagener Versuch, die JSON Datei zu ändern. */
@@ -58,24 +58,24 @@ export class ArPage implements OnInit {
 
   qrscan() {
     this.datenData = this.datenService.getJsondata();
-    this.selectedProduct = {};
+    this.selectedQrcode = {};
     this.barcodeScanner.scan().then(
       barcodeData => {
         // tslint:disable-next-line: max-line-length
-        this.selectedProduct = this.datenData.find(
+        this.selectedQrcode = this.datenData.find(
           daten => daten.qrcode === barcodeData.text
-        ); /** Wenn der Text des QR-Codes mit dem Qrcode der Json Datei übereinstimmt, wird productFound auf true gesetzt, die CameraPreview und das Modal geöffnet. */
-        if (this.selectedProduct !== undefined) {
-          this.productFound = true;
+        ); /** Wenn der Text des QR-Codes mit dem Qrcode der Json Datei übereinstimmt, wird qrcodeFound auf true gesetzt, die CameraPreview und das Modal geöffnet. */
+        if (this.selectedQrcode !== undefined) {
+          this.qrcodeFound = true;
           /** this.setJson(this.fileName, this.object); - fehlgeschlagener Versuch die JSON Datei zu ändern.*/ 
           this.camerapreview();
           this.showModal();
         } else {
           // tslint:disable-next-line: max-line-length
-          this.productFound = false; /** Stimmt der Text des QR-Codes nicht überein, erscheint eine Fehlermeldung und der User wird zurück zur Startseite des QR-Scanners geleitet. */
+          this.qrcodeFound = false; /** Stimmt der Text des QR-Codes nicht überein, erscheint eine Fehlermeldung und der User wird zurück zur Startseite des QR-Scanners geleitet. */
           this.router.navigate(['/tabs/tab2']);
           this.toast
-            .show(`Product not found`, '5000', 'center')
+            .show(`Unbekannter QR-Code`, '5000', 'center')
             .subscribe(toast => {
               console.log(toast);
             });
@@ -122,7 +122,7 @@ export class ArPage implements OnInit {
 
   async open() {
     await Browser.open({
-      url: this.selectedProduct.artist.website
+      url: this.selectedQrcode.artist.website
     }); /** Ermöglicht Öffnen der Website im Browser des Telefons. */
   }
 
@@ -130,7 +130,7 @@ export class ArPage implements OnInit {
     /** Ermöglicht Weitergabe der Daten in selectedProduct auf die Detailseite. */
     const navigationExtras: NavigationExtras = {
       state: {
-        selectedProduct: this.selectedProduct
+        selectedQrcode: this.selectedQrcode
       }
     };
     this.router.navigate(['/tabs/tab2/ar/ar-detail'], navigationExtras);
