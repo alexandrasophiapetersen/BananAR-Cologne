@@ -1,9 +1,7 @@
-Phuong Linh Nguyen (7315394) Edylyn Blanco Garcia (5878918) Joel Jung (5596815) Alexandra Petersen (7306775)
+Phuong Linh Nguyen (7315394), Edylyn Blanco Garcia (5878918), Joel Jung (5596815), Alexandra Petersen (7306775)
     													
 Dokumentation: Interaktive Streetart App - BananAR Cologne
 													
-	
-	
 Konzept:
 Das Kursthema Augmented City lud dazu ein, sich mit der optischen Entwicklung Kölns und unserer Neugier über 
 Streetart zu befassen. Streetart, welche wir im Alltag im Vorbeigehen betrachten, jedoch nie mit der selben 
@@ -15,18 +13,36 @@ Dem Benutzer stehen eine begrenzte Auswahl an Murals in Ehrenfeld zur Verfügung
 und der Reihenfolge suchen kann Anschließend ist es über die App möglich Informationen zu den Werken in einem 
 AR-Overlayzu erhalten. 
 	
-Mit Hilfe der Standortlokalisierung sieht der Benutzer, wo er sich derzeit befindet (Bild 1). Die nächstgelegenen
-Murals sind auf der Karte anhand von Icons zu sehen (Bild 2). Durch diese Icons wird nicht vorweggenommen, wie das
-Mural aussieht. 
-Der Benutzer soll das Wandbild selbst entdecken und einen QR-Code finden, welcher eingescannt werden kann (Bild 3).
-Die App greift auf die Kamera des Smartphones zu (Bild 4). Nach erfolgreichem Scan erscheint ein Overlay, 
-welches darauf hindeutet, dass eine "Banane" gefunden wurde und eine Sammelfunktion existiert (Bild 5). Die
-Betrachtung des Murals durch die Kamera wird mit Informationen zum Werk und gegebenenfalls Verlinkungen zu einer
-offiziellen Website/dem Instagram Profil des Künstlers erweitert (Bild 6). Zudem ist es möglich eine Detailseite 
-aufzurufen (Bild 7). 
+Mit Hilfe der Standortlokalisierung sieht der Benutzer, wo er sich derzeit befindet.
+Die nächstgelegenen Murals sind auf der Karte anhand von Icons zu sehen. Durch diese Icons wird nicht vorweggenommen, wie das Mural aussieht. 
+
+![alt text](https://github.com/alexandrasophiapetersen/BananAR-Cologne/blob/master/Screenshots/Map.jpeg)
+
+Der Benutzer soll das Wandbild selbst entdecken und einen QR-Code finden, welcher eingescannt werden kann
+
+![alt text](https://github.com/alexandrasophiapetersen/BananAR-Cologne/blob/master/Screenshots/Scan.jpeg)
+
+Die App greift auf die Kamera des Smartphones zu.
+
+![alt text](https://github.com/alexandrasophiapetersen/BananAR-Cologne/blob/master/Screenshots/QR-Scan.png)
+
+Nach erfolgreichem Scan erscheint ein Overlay, welches darauf hindeutet, dass eine "Banane" gefunden wurde und eine Sammelfunktion existiert. 
+
+![alt text](https://github.com/alexandrasophiapetersen/BananAR-Cologne/blob/master/Screenshots/Modal.png)
+
+Die Betrachtung des Murals durch die Kamera wird mit Informationen zum Werk und gegebenenfalls Verlinkungen zu einer
+offiziellen Website/dem Instagram Profil des Künstlers erweitert.
+
+![alt text](https://github.com/alexandrasophiapetersen/BananAR-Cologne/blob/master/Screenshots/Camera%20Preview.png)
+
+Zudem ist es möglich eine Detailseite aufzurufen. 
+
+![alt text](https://github.com/alexandrasophiapetersen/BananAR-Cologne/blob/master/Screenshots/Details.jpeg)
 	
 Die Idee, eine Liste mit allen gesammelten Murals und deren Detailseiten anzuzeigen, wurde versucht umzusetzen. Dieser 
-Versuch ist gescheitert (Bild 8). Weiteres dazu in dem Abschnitt zu der technischen Umsetzung.
+Versuch ist gescheitert. Weiteres dazu in dem Abschnitt zu der technischen Umsetzung.
+
+![alt text](https://github.com/alexandrasophiapetersen/BananAR-Cologne/blob/master/Screenshots/Detailliste.png)
 	
 	
 Design: 
@@ -53,9 +69,7 @@ erstellt und stilistisch an das Design der App angepasst. Anschließend wurden d
 von Stickern angebracht. 
 	
 Technische Umsetzung: 
-Die technische Umsetzung der App lief größtenteils erfolgreich. Viele Komponenten konnten 
-umgesetzt werden. Eine jedoch nicht.  Gearbeitet wurde mit dem Framework Ionic und Angular Typescript, sowie Cordova
-und Capacitor. Gearbeitet wurde damit vorher nicht. Alle technischen Skills wurden im Laufe des Semesters selbst erarbeitet.
+Die technische Umsetzung der App lief größtenteils erfolgreich. Viele Komponenten konnten umgesetzt werden. Eine jedoch nicht.  Erstellt wurde die App mit dem Framework Ionic und Angular Typescript, sowie Cordova und Capacitor. Gearbeitet wurde damit vorher nicht. Alle technischen Skills wurden im Laufe des Semesters selbst erarbeitet.
 	
 Die App selbst baut sich wie folgt auf: Startseite ist "tab1.page.html". Die HTML Seite enthält neben Toolbar und 
 Weiterleitung zu der Liste der Details, die Komponente "google-map". In dieser Komponente wird die Map geladen und 
