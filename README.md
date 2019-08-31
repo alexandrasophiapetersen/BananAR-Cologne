@@ -6,7 +6,7 @@ Konzept:
 Das Kursthema Augmented City lud dazu ein, sich mit der optischen Entwicklung Kölns und unserer Neugier über 
 Streetart zu befassen. Streetart, welche wir im Alltag im Vorbeigehen betrachten, jedoch nie mit der selben 
 Aufmerksamkeit wie Kunstwerke in einem Museum. Hinzu kommt, dass dem Betrachter eines Murals durch vage
-Zusammensetzungen aus Suchbegriffen im Internet zusätzliche Informationen gegeben werden können. 
+Zusammensetzungen aus Suchbegriffen im Internet nur wenig zusätzliche Informationen gegeben werden können. 
 	
 Die interaktive Streetart App "BananAR Cologne" vereint das Prinzip eines virtuellen Museums und Geocaching.
 Dem Benutzer stehen eine begrenzte Auswahl an Murals in Ehrenfeld zur Verfügung, welche unabhängig von der Tageszeit
