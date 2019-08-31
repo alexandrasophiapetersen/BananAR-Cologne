@@ -27,9 +27,9 @@ export class ArPage implements OnInit {
   datenData = [];
   selectedQrcode: any;
   qrcodeFound = false; /** Wenn boolean = true, werden die Daten in der HTML Seite ausggeben. */
-  fileName = 'data.json';
+  /** fileName = 'data.json';
   dataDirectory = this.file.applicationDirectory + 'assets/data/';
-  /** object = {scanned: true}; - fehlgeschlagener Versuch, die JSON Datei zu ändern. */
+  object = {scanned: true}; - fehlgeschlagener Versuch, die JSON Datei zu ändern. */
   constructor(
     private barcodeScanner: BarcodeScanner,
     private datenService: JsonDataService,
